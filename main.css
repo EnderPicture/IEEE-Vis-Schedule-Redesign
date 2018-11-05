@@ -2,9 +2,11 @@
 
 * {
     box-sizing: border-box;
-    transition: .2s ease-out;
     color: #ffffff;
     font-family: 'Open Sans', sans-serif;
+
+    transition: .2s ease-out;
+    -webkit-transition: .2s ease-out;
 }
 .schedule-con {
     padding: 0 1rem;
@@ -48,6 +50,7 @@ h2 {
     padding-right: .5rem;
 }
 .timeobject-con {
+    height:100%;
     background-color: #333;
 }
 .timeobject-con > p {
@@ -112,8 +115,15 @@ h2 {
     overflow-y: hidden;
     overflow-x: scroll;
     white-space: nowrap;
-
     scroll-snap-type: x mandatory;
+    
+    -webkit-overflow-scrolling: touch;
+}
+.scroll-con > :first-child {
+    margin-left: 100%;
+}
+.scroll-con > :last-child {
+    margin-right: 100%;
 }
 .scroll-con::-webkit-scrollbar {
     display: none;
@@ -136,13 +146,8 @@ h2 {
 .dark-background {
     background-color: #111;
 }
-.marg-start {
-    margin-left: 100%;
-}
-.marge-end {
-    margin-right: 100%;
-}
 .unselected {
     filter: opacity(.5) blur(.1rem);
     transform: scale(.95);
+
 }
