@@ -17,14 +17,36 @@ window.onload = function() {
                 let right = item.offsetWidth+item.offsetLeft;
                 
                 if (center > left && center < right) {
-                    item.style.filter = "";
-                    item.style.transform = "";
+                    item.style.filter = "opacity(1) blur(0)";
+                    item.style.transform = "scale(1) translate3d(0,0,0)";
                 } else {
                     item.style.filter = "opacity(.5) blur(.1rem)";
-                    item.style.transform = "scale(.95)";
+                    item.style.transform = "scale(.95) translate3d(0,0,0)";
                 }
             }
     
         };
     }
 }
+
+// $(document).ready(function() {
+
+//     $(".scroll-con").scroll(function() {
+//         $(this).find(".scroll-items").each(function() {
+//             let center = $(this).parent().width()/2;
+//             let left = $(this).position().left + parseInt($(this).css("marginLeft"));
+//             let right = left + $(this).width();
+//             if (center > left && center < right) {
+//                 $(this).css("-webkit-filter", "opacity(1) blur(0)");
+//                 $(this).css("-webkit-transform", "scale(1) translate3d(0,0,0)");
+//                 $(this).css("filter", "opacity(1) blur(0)");
+//                 $(this).css("transform", "scale(1) translate3d(0,0,0)");
+//             } else {
+//                 $(this).css("-webkit-filter", "opacity(.5) blur(.1rem)");
+//                 $(this).css("-webkit-transform", "scale(.95) translate3d(0,0,0)");
+//                 $(this).css("filter", "opacity(.5) blur(.1rem)");
+//                 $(this).css("transform", "scale(.95) translate3d(0,0,0)");
+//             }
+//         });
+//     });
+// });
