@@ -135,6 +135,7 @@ h2 {
     display: none;
 }
 .scroll-items {
+    white-space: normal;
     vertical-align: top;
     display: inline-block;
     width: 70%;
