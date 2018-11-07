@@ -144,6 +144,10 @@ h2 {
     padding: .5rem;
     border: solid;
     color: rgb(252, 41, 32);
+    /* fix glitch on ios */
+    transform:translate3d(0,0,0);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
 
     scroll-snap-align: center;
 }

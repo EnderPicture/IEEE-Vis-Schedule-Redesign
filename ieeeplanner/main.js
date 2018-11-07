@@ -17,11 +17,11 @@ window.onload = function() {
                 let right = item.offsetWidth+item.offsetLeft;
                 
                 if (center > left && center < right) {
-                    item.style.filter = "";
-                    item.style.transform = "";
+                    item.style.filter = "opacity(1) blur(0)";
+                    item.style.transform = "scale(1) translate3d(0,0,0)";
                 } else {
                     item.style.filter = "opacity(.5) blur(.1rem)";
-                    item.style.transform = "scale(.95)";
+                    item.style.transform = "scale(.95) translate3d(0,0,0)";
                 }
             }
     
