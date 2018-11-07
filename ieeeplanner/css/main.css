@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+    box-sizing: border-box;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+
+    transition: .2s ease-out;
+    -webkit-transition: .2s ease-out;
+}
+.schedule-con {
+    padding: 0 1rem;
+    margin: auto;
+    max-width: 30rem;
+}
+h2 {
+    margin: 1rem 0 0 0;
+    color: rgb(0,0,0);
+    font-size: 1.2rem;
+}
+.flex-verticle {
+    display: flex;
+    flex-direction: column;
+}
+.flex-horizontal {
+    display: flex;
+    flex-direction: row;
+}
+.schedule-con {
+    width: 100%;
+}
+.items-con {
+    position: relative;
+    flex-grow: 1;
+    z-index: 0;
+}
+
+.time-con {
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.time-config {
+    width: 2.5rem;
+    height: 100%;
+}
+.radious-config {
+    border-radius: .5rem;
+}
+
+.time-padding {
+    padding-right: .5rem;
+}
+.timeobject-con {
+    height:100%;
+    background-color: rgb(252, 41, 32);
+    /* border: solid;
+    color: #fff; */
+}
+.timeobject-con > p {
+    padding: 0;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    display: block;
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    transform-origin: center;
+    transform: translate(-.1rem,0) rotate(180deg);
+    color: #fff;
+}
+
+.line-con {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    padding-top: 1.1rem;
+    padding-bottom: 1.1rem;
+}
+.line {
+    height: 100%;
+    width: .2rem;
+    margin: auto;
+}
+.item {
+    width: 100%;
+    height: 10rem;
+    margin: 1rem 0rem;
+    display: flex;
+}
+.schedule-scroll {
+    flex-grow: 1;
+    height: 100%;
+    position: relative;
+}
+.shadow-con {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.shadow-left {
+    position: absolute;
+    left: 0;
+    width: .35rem;
+    height: 100%;
+    background-image: linear-gradient(to right,#ffff,#fff0);
+    z-index: 1;
+}
+.shadow-right {
+    position: absolute;
+    right: 0;
+    width: .5rem;
+    height: 100%;
+    background-image: linear-gradient(to right,#fff0,#ffff);
+    z-index: 1;
+}
+.scroll-con {
+    height: 100%;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+
+    -webkit-overflow-scrolling: touch;
+}
+.scroll-con > :first-child {
+    margin-left: 100%;
+}
+.scroll-con > :last-child {
+    margin-right: 100%;
+}
+.scroll-con::-webkit-scrollbar {
+    display: none;
+}
+.scroll-items {
+    vertical-align: top;
+    display: inline-block;
+    width: 70%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 0 0.125rem;
+    padding: .5rem;
+    border: solid;
+    color: rgb(252, 41, 32);
+
+    scroll-snap-align: center;
+}
+
+.scroll-items p {
+  color:#000;
+  font-size: 0.9rem;
+}
+
+.scroll-items h3 {
+  color:rgb(252, 41, 32);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+}
+
+.scroll-items p.room_no {
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-top: 0;
+  font-weight: bold;
+}
+
+.scroll-items p.room_no.vast {
+  color:rgb(139, 55, 92);
+}
+
+.scroll-items p.room_no.infovis {
+  color: rgb(69, 53, 145);
+}
+
+.red {
+    background-color: rgb(252,41,32);
+}
+.dark-background {
+    background-color: #111;
+}
+.unselected {
+    filter: opacity(.5) blur(.1rem);
+    transform: scale(.95);
+
+}

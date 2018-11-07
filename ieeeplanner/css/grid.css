@@ -1,0 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+ .info {
+   display: flex;
+   flex-wrap: wrap;
+ }
