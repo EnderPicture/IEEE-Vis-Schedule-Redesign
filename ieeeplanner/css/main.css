@@ -151,11 +151,12 @@ h2 {
     backface-visibility: hidden;
 
     scroll-snap-align: center;
+    box-shadow: 5px 5px 5px gray;
 }
 
 .scroll-items p {
   color:#000;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
 }
 
 .scroll-items h3 {
@@ -178,6 +179,14 @@ h2 {
 
 .scroll-items p.room_no.infovis {
   color: rgb(69, 53, 145);
+}
+
+.scroll-items p.room_no.vis {
+  color: rgb(121, 25, 32);
+}
+
+.scroll-items p.room_no.scivis {
+  color: rgb(28, 95, 98);
 }
 
 .red {
