@@ -1,3 +1,5 @@
+let topsheetHeight = "10vh";
+
 window.onload = function() {
     let scrollElements = document.getElementsByClassName("scroll-con");
 
@@ -26,11 +28,14 @@ window.onload = function() {
             }
 
         };
+
+        element.onclick = function() {
+            document.getElementsByClassName("bottom-sheet")[0].style.top = topsheetHeight;
+        };
     }
 }
 
 // $(document).ready(function() {
-
 //     $(".scroll-con").scroll(function() {
 //         $(this).find(".scroll-items").each(function() {
 //             let center = $(this).parent().width()/2;
