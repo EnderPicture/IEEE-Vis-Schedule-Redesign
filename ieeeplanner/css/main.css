@@ -211,3 +211,17 @@ h2 {
     background: #fff;
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
+
+.bottom-sheet.radious-config {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 25px;
+}
+
+.bottom-sheet.radious-config h2.title {
+    margin-top: 25px;
+}
+
+.bottom-sheet.radious-config p.desc {
+    font-size: 0.7rem;
+}
