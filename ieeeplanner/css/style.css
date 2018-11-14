@@ -189,3 +189,18 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   color: #fff;
   font-size: 1.75rem;
 }
+
+.exit-space {
+    height: 30px;
+}
+
+.exit {
+    width: 50px;
+    height: 5px;
+    background-color: gray;
+    opacity: 0.6;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    border-radius: 50px;
+}
