@@ -1,7 +1,9 @@
-let topsheetHeight = "10vh";
+let topsheetHeightOpen = "10vh";
+let topsheetHeightClosed = "100vh";
 
 window.onload = function() {
     let scrollElements = document.getElementsByClassName("scroll-con");
+    let bottomsheet = document.getElementsByClassName("bottom-sheet")[0];
 
     for (let i = 0; i < scrollElements.length; i++) {
         element = scrollElements[i];
@@ -29,12 +31,24 @@ window.onload = function() {
 
         };
 
-        element.onclick = function() {
-            document.getElementsByClassName("bottom-sheet")[0].style.top = topsheetHeight;
-        };
-    }
-}
 
+        for (let item of element.items) {
+
+            item.onclick = function() {
+                bottomsheet.style.top = topsheetHeightOpen;
+                bottomsheet.getElementsByClassName("title")[0].innerHTML = item.getAttribute("data-title");
+                bottomsheet.getElementsByClassName("room")[0].innerHTML = item.getAttribute("data-room");
+                bottomsheet.getElementsByClassName("desc")[0].innerHTML = item.getAttribute("data-desc");
+            };
+        }    
+    }
+
+    bottomsheet.getElementsByClassName("exit-space")[0].onclick = function() {
+        console.log("clicked");
+        bottomsheet.style.top = topsheetHeightClosed;
+    };
+    
+}
 // $(document).ready(function() {
 //     $(".scroll-con").scroll(function() {
 //         $(this).find(".scroll-items").each(function() {
