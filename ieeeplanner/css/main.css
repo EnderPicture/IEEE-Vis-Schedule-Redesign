@@ -67,7 +67,7 @@ h2 {
     text-orientation: sideways;
     transform-origin: center;
     transform: translate(-.1rem,0) rotate(180deg);
-    color: #fff;
+    color: #000;
 }
 
 .line-con {
