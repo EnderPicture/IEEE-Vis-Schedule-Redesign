@@ -39,6 +39,14 @@ window.onload = function() {
                 bottomsheet.getElementsByClassName("title")[0].innerHTML = item.getAttribute("data-title");
                 bottomsheet.getElementsByClassName("room")[0].innerHTML = item.getAttribute("data-room");
                 bottomsheet.getElementsByClassName("desc")[0].innerHTML = item.getAttribute("data-desc");
+                
+                let i = 1;
+                let content = "";
+                while (item.getAttribute("data-chat"+i) != null ) {
+                    content += "<p class=\"chat\">" + item.getAttribute("data-chat"+i) + "</p>";
+                    i++;
+                }
+                bottomsheet.getElementsByClassName("chat-con")[0].innerHTML = content;
             };
         }    
     }
