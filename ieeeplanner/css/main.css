@@ -206,7 +206,7 @@ h2 {
     position: fixed;
     overflow: hidden;
     top: 100vh;
-    height: 100vh;
+    height: 90vh;
     z-index: 5;
     background: #fff;
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
@@ -216,7 +216,6 @@ h2 {
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 25px;
-    max-height: 475px;
     overflow-y: auto;
 }
 
@@ -230,5 +229,14 @@ h2 {
 }
 
 .bottom-sheet.radious-config p.desc {
+    font-size: 0.7rem;
+}
+
+.bottom-sheet.radious-config h3 {
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+
+.bottom-sheet.radious-config .chat-con {
     font-size: 0.7rem;
 }
