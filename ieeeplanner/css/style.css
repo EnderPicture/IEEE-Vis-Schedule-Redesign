@@ -188,6 +188,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   margin-top:0.9rem;
   color: #fff;
   font-size: 1.75rem;
+  font-family: 'Varela Round';
 }
 
 .exit-space {
@@ -199,7 +200,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     color: gray;
     opacity: 0.6;
     font-size: 0.4rem;
-    margin-top: 17px;
+    margin-top: 20px;
 }
 
 .exit {
