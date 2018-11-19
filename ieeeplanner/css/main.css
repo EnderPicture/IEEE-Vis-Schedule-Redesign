@@ -241,3 +241,11 @@ h2 {
 .bottom-sheet.radious-config .chat-con {
     font-size: 0.7rem;
 }
+
+@media (max-width: 23.4375em) {
+
+    .bottom-sheet.radious-config {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
