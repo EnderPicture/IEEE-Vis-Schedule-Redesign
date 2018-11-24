@@ -10,7 +10,7 @@ window.onload = function() {
         element.items = element.getElementsByClassName("scroll-items");
         element.items[0].scrollIntoView({block: "center"});
 
-        element.onscroll = function() {
+        element.onscroll = function(e) {
 
             let center = this.scrollLeft + this.offsetWidth/2;
 
@@ -55,8 +55,27 @@ window.onload = function() {
         console.log("clicked");
         bottomsheet.style.top = topsheetHeightClosed;
     };
+
+    let timeButtons = document.getElementsByClassName("timeobject-con");
+
+    for (let timeButton of timeButtons) {
+        timeButton.unselected = false;
+        timeButton.onclick = function() {
+            if (this.unselected) {
+                this.parentElement.parentElement.style.filter = "opacity(1) blur(0)";
+                this.unselected = false;
+                this.parentElement.parentElement.getElementsByClassName("shadow-con")[0].style.zIndex = 0;
+            } else {
+                this.parentElement.parentElement.style.filter = "opacity(.25) blur(.1rem)";
+                this.unselected = true;
+                this.parentElement.parentElement.getElementsByClassName("shadow-con")[0].style.zIndex = 1;
+            }
+        };
+    }
     
 }
+
+
 // $(document).ready(function() {
 //     $(".scroll-con").scroll(function() {
 //         $(this).find(".scroll-items").each(function() {

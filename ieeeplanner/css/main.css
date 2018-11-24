@@ -8,10 +8,8 @@
     transition: .2s ease-out;
     -webkit-transition: .2s ease-out;
 }
-.schedule-con {
-    padding: 0 1rem;
-    margin: auto;
-    max-width: 30rem;
+body {
+    background-color: #f4f4f4;
 }
 h2 {
     margin: 1rem 0 0 0;
@@ -27,6 +25,10 @@ h2 {
     flex-direction: row;
 }
 .schedule-con {
+
+    padding: 0 1rem;
+    margin: auto;
+    max-width: 30rem;
     width: 100%;
 }
 .items-con {
@@ -85,13 +87,14 @@ h2 {
 }
 .item {
     width: 100%;
-    height: 10rem;
+    height: 20rem;
     margin: 1rem 0rem;
     display: flex;
 }
 .schedule-scroll {
     flex-grow: 1;
     height: 100%;
+    width: 0;
     position: relative;
 }
 .shadow-con {
@@ -104,7 +107,7 @@ h2 {
     left: 0;
     width: .35rem;
     height: 100%;
-    background-image: linear-gradient(to right,#ffff,#fff0);
+    background-image: linear-gradient(to right,#f4f4f4ff,#f4f4f400);
     z-index: 1;
 }
 .shadow-right {
@@ -112,11 +115,12 @@ h2 {
     right: 0;
     width: .5rem;
     height: 100%;
-    background-image: linear-gradient(to right,#fff0,#ffff);
+    background-image: linear-gradient(to right,#f4f4f400,#f4f4f4ff);
     z-index: 1;
 }
 .scroll-con {
     height: 100%;
+    width:100%;
     position: relative;
     overflow-y: hidden;
     overflow-x: scroll;
@@ -140,7 +144,7 @@ h2 {
     display: inline-block;
     width: 70%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 1);
     margin: 0 0.125rem;
     padding: .5rem;
     border: solid;
@@ -151,7 +155,6 @@ h2 {
     backface-visibility: hidden;
 
     scroll-snap-align: center;
-    box-shadow: 5px 5px 5px gray;
 }
 
 .scroll-items p {
@@ -190,6 +193,22 @@ h2 {
   color: rgb(28, 95, 98);
 }
 
+.scroll-items p.room_no.vast {
+  color:rgb(139, 55, 92);
+}
+
+.scroll-items p.room_no.infovis {
+  color: rgb(69, 53, 145);
+}
+
+.scroll-items p.room_no.vis {
+  color: rgb(121, 25, 32);
+}
+
+.scroll-items p.room_no.scivis {
+  color: rgb(28, 95, 98);
+}
+
 .red {
     background-color: rgb(252,41,32);
 }
@@ -199,7 +218,6 @@ h2 {
 .unselected {
     filter: opacity(.5) blur(.1rem);
     transform: scale(.95);
-
 }
 
 .bottom-sheet {

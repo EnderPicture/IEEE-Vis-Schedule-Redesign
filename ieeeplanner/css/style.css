@@ -9,21 +9,7 @@ body {
     margin: 0;
     font-family: 'Varela Round', sans-serif;
 }
-.scroll-items p.room_no.vast {
-  color:rgb(139, 55, 92);
-}
 
-.scroll-items p.room_no.infovis {
-  color: rgb(69, 53, 145);
-}
-
-.scroll-items p.room_no.vis {
-  color: rgb(121, 25, 32);
-}
-
-.scroll-items p.room_no.scivis {
-  color: rgb(28, 95, 98);
-}
 .header {
     display: block;
     margin: 0 auto;
