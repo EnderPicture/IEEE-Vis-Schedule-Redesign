@@ -274,4 +274,9 @@ h2 {
         margin-bottom: 0.3rem;
         margin-top: 0.3rem;
       }    
+
+      .scroll-items p {
+        color:#000;
+        font-size: 0.5rem;
+      }
 }
