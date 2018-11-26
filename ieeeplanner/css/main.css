@@ -266,4 +266,12 @@ h2 {
         padding-left: 25px;
         padding-right: 25px;
     }
+
+    .scroll-items h3 {
+        color:rgb(252, 41, 32);
+        text-transform: uppercase;
+        font-size: 0.4rem;
+        margin-bottom: 0.3rem;
+        margin-top: 0.3rem;
+      }    
 }
